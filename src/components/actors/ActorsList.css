@@ -1,0 +1,10 @@
+.actors-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.single-actor {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
