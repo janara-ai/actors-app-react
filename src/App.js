@@ -10,8 +10,6 @@ class App extends React.Component {
     this.state = {
       isLoading: true,
       actors: [],
-      // filteredActors: [],
-      // isFiltered: false,
       filterParam: "",
     };
   }
@@ -28,7 +26,6 @@ class App extends React.Component {
     this.setState({ actors: data.results, isLoading: false });
   };
   handleFilter = (filterParam) => {
-    // filterParam: male, female or popularity
     this.setState({ filterParam: filterParam });
   };
   render() {
@@ -53,7 +50,7 @@ class App extends React.Component {
               style={{
                 height: 40,
                 marginRight: "20px",
-                // width: 40,
+                
               }}
             />
             Welcome to our Actors API
@@ -98,4 +95,3 @@ class App extends React.Component {
 }
 
 export default App;
-//create components folder => actors folder => ActorsList.jsx which renders actors names
